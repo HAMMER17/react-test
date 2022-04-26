@@ -8,6 +8,7 @@ import { FirebaseState } from "./contex/firebase/FirebaseState";
 import About from "./pages/About";
 import { Home } from "./pages/Home";
 import Register from "./pages/Register";
+import Weather from "./pages/Weather";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="/weather" element={<Weather />} />
               </Routes>
             </div>
           </Router>

@@ -88,3 +88,8 @@ img {
 hr {
   border: 2px solid black;
 }
+
+.weather {
+  box-shadow: 5px 5px 5px 5px gray;
+  border-radius: 10px;
+}

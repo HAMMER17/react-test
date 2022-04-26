@@ -6,12 +6,17 @@ export const Header = () => {
       <i className="bi bi-hypnotize m-1" style={{ fontSize: 30, color: 'white' }}></i>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+          <Link className="nav-link active" aria-current="page" to="/">Главная</Link>
         </li>
       </ul>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/about">About</Link>
+          <Link className="nav-link active" aria-current="page" to="/about">Авторизация</Link>
+        </li>
+      </ul>
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/weather">Погода</Link>
         </li>
       </ul>
       <form className="d-flex">
