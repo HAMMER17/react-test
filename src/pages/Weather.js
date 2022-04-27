@@ -37,24 +37,25 @@ export default class Weather extends Component {
     return (
       <form onSubmit={this.getWeather}>
         <div className="card m-3 weather" style={{ maxWidth: 650 }}>
-          <h1>погода</h1>
           <div className="row g-0">
-            <div className="col-md-4">
-              <img src={sun} alt="sun" />
-            </div>
-            <div className="col-md-10" >
+            <div className="col-md-8" >
+              <div className="col-md-4">
+                <img src={sun} alt="sun" style={{ maxWidth: 350 }} className="start" />
+              </div>
               <div className="card-body">
-                <input className='form-control' type="text" name='city' placeholder='название города...' />
+                <h1>погода</h1>
+                <input className='form-control m-1 w' type="text" name='city'
+                  placeholder='название города...' />
                 <ul className="list-group list-group-flush">
-                  <li className='list-group-item'>Температура : {this.state.temp}</li>
-                  <li className='list-group-item'>Город : {this.state.city}</li>
-                  <li className='list-group-item'>Страна : {this.state.country}</li>
-                  <li className='list-group-item'>Восход солнца : {this.state.sunrise}</li>
-                  <li className='list-group-item'>Давление : {this.state.pressure}</li>
+                  <li className='list-group-item bg-success m-1'>Температура : {this.state.temp}</li>
+                  <li className='list-group-item bg-warning m-1'>Город : {this.state.city}</li>
+                  <li className='list-group-item bg-info m-1'>Страна : {this.state.country}</li>
+                  <li className='list-group-item bg-danger m-1'>Восход солнца : {this.state.sunrise}</li>
+                  <li className='list-group-item bg-primary m-1'>Давление : {this.state.pressure}</li>
                 </ul>
                 <hr />
 
-                <button className='btn btn-primary'>Получить погоду</button>
+                <button className='btn btn-outline-secondary'>Получить погоду</button>
 
               </div>
             </div>

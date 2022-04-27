@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: olive;
 }
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
@@ -46,6 +47,7 @@ h1 {
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px gray;
+  background-color: orange;
 }
 
 .el {
@@ -89,7 +91,30 @@ hr {
   border: 2px solid black;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .start {
+    animation: start infinite 20s linear;
+  }
+}
+
+@keyframes start {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .weather {
+  border-radius: 10px;
   box-shadow: 5px 5px 5px 5px gray;
+}
+
+.w {
+  width: 450px;
+  height: 50px;
+  border: 2px solid black;
   border-radius: 10px;
 }

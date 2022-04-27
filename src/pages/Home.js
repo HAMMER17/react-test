@@ -3,6 +3,7 @@ import { Form } from "../components/Form";
 import { Loader } from "../components/Loader";
 import { AlertContext } from "../contex/alert/alertContext";
 import { FirebaseContext } from "../contex/firebase/firebaseContext";
+import anime from '../images/Ocean.mp4'
 
 export const Home = () => {
   const [value, setValue] = useState('')
@@ -38,6 +39,7 @@ export const Home = () => {
         <Loader /> :
         <Form notes={notes} removeNote={removeNote} />
       }
+      <video autoPlay src={anime} style={{ height: 500, width: '100%' }} />
     </>
   );
 }
